@@ -1,0 +1,85 @@
+:root {
+  --color-accent-dark: hsl(158 36% 37%);
+  --color-accent-light: hsl(30 38% 92%);
+
+  --color-neutral-dark: hsl(212 21% 14%);
+  --color-neutral-regular: hsl(228 12% 48%);
+  --color-neutral-light: hsl(0 0% 100%);
+
+  --font-family-regular: 'Montserrat', sans-serif;
+  --font-family-accent: 'Fraunces', serif;
+
+  --font-size-regular: 0.875em;
+  --font-size-accent: 2.5em;
+}
+
+#app {
+  background-color: var(--color-accent-light);
+  height: 100%;
+}
+
+.container {
+  padding: 1.5em 1em;
+}
+
+.product-card-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-info-wrapper {
+   padding: 1em;
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: var(--font-size-regular);
+  font-family: var(--font-family-regular);
+  color: var(--color-neutral-regular);
+}
+
+.product-title {
+  font-size: var(--font-size-accent);
+  font-family: var(--font-family-accent);
+  margin: 0.5em 0;
+  line-height: 1;
+}
+
+.product-description {
+  font-family: var(--font-family-regular);
+  font-size: var(--font-size-regular);
+  color: var(--color-neutral-regular);
+}
+
+.product-price-wrapper {
+  margin: 1em 0;
+  display: flex;
+  column-gap: 1.5em;
+  align-items: center;
+}
+
+.price {
+  font-size: var(--font-size-accent);
+  font-family: var(--font-family-accent);
+  color: var(--color-accent-dark);
+}
+
+.msrp {
+  color: var(--color-neutral-regular);
+  text-decoration: line-through;
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--color-accent-dark);
+  border: none;
+  border-radius: 10px;
+  font-size: var(--font-size-regular);
+  font-family: var(--font-family-regular);
+  color: var(--color-neutral-light);
+}
