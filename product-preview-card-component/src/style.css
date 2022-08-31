@@ -13,9 +13,16 @@
   --font-size-accent: 2.5em;
 }
 
-#app {
+body {
   background-color: var(--color-accent-light);
+}
+
+#app {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
 }
 
 .container {
@@ -26,6 +33,7 @@
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  max-width: 375px;
 }
 
 .product-info-wrapper {
