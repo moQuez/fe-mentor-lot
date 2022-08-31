@@ -30,6 +30,8 @@ body {
 }
 
 .product-card-wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -92,4 +94,20 @@ body {
   font-size: var(--font-size-regular);
   font-family: var(--font-family-regular);
   color: var(--color-neutral-light);
+}
+
+@media screen and (min-width: 768px) {
+  .product-card-wrapper { 
+    flex-direction: row;
+    align-items: center;
+    max-width: 640px;
+  }
+
+  .product-card-wrapper > * { 
+    flex-basis: 50%;
+  }
+
+  .product-info-wrapper {
+    padding: 1.5em;
+ }
 }
